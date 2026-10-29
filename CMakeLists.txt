@@ -81,7 +81,7 @@ elseif(WIN32)
     #pragma comment( linker, "/nodefaultlib:tbb_debug.lib" )
     set (CMAKE_DEBUG_POSTFIX "_debug")
 
-    cmake_minimum_required (VERSION 3.1)
+    cmake_minimum_required (VERSION 3.5)
     enable_language(ASM_MASM)
     set(CMAKE_CXX_FLAGS "/GS- /Zc:wchar_t /Zc:forScope /DUSE_WINTHREAD ${CMAKE_CXX_FLAGS}")
     set(CMAKE_CXX_FLAGS "/D_CRT_SECURE_NO_DEPRECATE /D_WIN32_WINNT=0x0600 ${CMAKE_CXX_FLAGS}")
